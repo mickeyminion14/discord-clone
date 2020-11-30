@@ -1,0 +1,9 @@
+.channel {
+  &:hover > h4 {
+    transition: 0.4s linear;
+    color: white;
+    background-color: #40464b;
+  }
+  .channel__hash {
+  }
+}
