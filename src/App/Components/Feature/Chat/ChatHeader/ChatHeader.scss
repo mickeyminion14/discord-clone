@@ -1,0 +1,66 @@
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  padding: 10px;
+  .chatHeader__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      display: flex;
+      align-items: center;
+      //   color: white;
+    }
+    .chatHeader__hash {
+      color: gray;
+      font-size: 30px;
+      padding: 10px;
+    }
+  }
+  .chatHeader__right {
+    display: flex;
+    align-items: center;
+    flex: 0.5;
+    justify-content: flex-end;
+    .MuiSvgIcon-root {
+      padding: 5px;
+      cursor: pointer;
+      &:hover {
+        transition: 0.4s linear;
+        color: white;
+      }
+    }
+    .chatHeader__search {
+      display: flex;
+      align-items: center;
+      color: gray;
+      background-color: #2f3135;
+      border-radius: 3px;
+      padding: 3px;
+      input {
+        background: transparent;
+        outline-width: 0;
+        color: white;
+        border: none;
+      }
+    }
+  }
+}
+.sidebar__toogle {
+  display: none !important;
+}
+@media only screen and (max-width: 600px) {
+  .sidebar__toogle {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .chatHeader {
+    position: static;
+    top: 0;
+    z-index: 10;
+  }
+}

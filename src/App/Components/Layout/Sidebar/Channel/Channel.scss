@@ -1,9 +1,19 @@
 .channel {
+  h4 {
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+    cursor: pointer;
+    color: gray;
+    background-color: #2f3135;
+  }
   &:hover > h4 {
     transition: 0.4s linear;
     color: white;
     background-color: #40464b;
   }
   .channel__hash {
+    font-size: 30px;
+    padding: 8px;
   }
 }

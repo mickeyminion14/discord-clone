@@ -1,0 +1,113 @@
+.no__channel {
+  display: flex;
+  background-color: #363a3f;
+  color: white;
+  flex-direction: column;
+
+  // justify-content: center;
+  flex: 0.75;
+  height: 100vh;
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.75;
+  background-color: #363a3f;
+  height: 100vh;
+
+  .chat__input {
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px;
+    border-top: 1px solid gray;
+    background-color: #474b53;
+    form {
+      flex: 1;
+      input {
+        max-width: 90%;
+        word-wrap: break-word;
+        height: auto;
+        text-overflow: clip;
+        white-space: normal;
+        padding: 15px;
+        background: transparent;
+        border: none;
+        outline-width: 0;
+        color: white;
+        font-size: large;
+      }
+    }
+    .chat__inputButton {
+      display: none;
+    }
+
+    .chat__inputIcons {
+      .MuiSvgIcon-root {
+        padding: 5px;
+      }
+    }
+  }
+
+  .chat__messages {
+    flex: 1;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-end;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    // &::-webkit-scrollbar {
+    //   display: none;
+    // }
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .chat,
+  .no__channel {
+    flex: 1;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .chat__messages {
+    max-height: 600px;
+  }
+  .chat__input {
+    margin: 0px !important;
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+.no__channelImg {
+  max-height: 500px;
+}

@@ -1,0 +1,23 @@
+.addChannelWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .channelName {
+    margin-top: 20px !important;
+  }
+  .MuiCircularProgress-svg {
+    color: cornflowerblue;
+  }
+
+  button {
+    margin-top: 20px;
+    background: cornflowerblue;
+    color: white;
+    &:hover {
+      background: rgb(85, 140, 241);
+    }
+    &:disabled {
+      background: lightgray;
+    }
+  }
+}

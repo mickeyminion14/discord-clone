@@ -1,0 +1,15 @@
+.closeButton {
+  position: absolute !important;
+  right: 0;
+  background: transparent;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.dialog {
+  .MuiDialog-paperScrollPaper {
+    min-width: 300px;
+  }
+}
